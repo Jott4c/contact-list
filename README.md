@@ -18,10 +18,14 @@ Clone o repositório do frontend:
 ```bash
 git clone https://github.com/Jott4c/contact-list-frontend.git
 
+```
+
 Clone o repositório da API:
 
 ```bash
 git clone https://github.com/Jott4c/contact-list-backend.git
+
+```
 
 ### 2. Instale as dependências
 
@@ -31,12 +35,16 @@ Instale as dependências do frontend:
 cd contact-list-frontend
 yarn install
 
+```
+
 
 Instale as dependências da API:
 
 ```bash
 cd contact-list-backend
 yarn install
+
+```
 
 
 ### 3. Inicie os servidores
@@ -47,12 +55,16 @@ Inicie a API:
 cd contact-list-backend
 yarn dev
 
+```
+
 
 Inicie o frontend:
 
 ```bash
 cd contact-list-frontend
 yarn start
+
+```
 
 
 ### 4. Faça o login
