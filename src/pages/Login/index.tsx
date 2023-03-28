@@ -14,7 +14,6 @@ interface Props {
 }
 
 const Login: React.FC<Props> = ({ setIsAuthenticated }) => {
-  const token = localStorage.getItem("authToken");
   const { register, handleSubmit } = useForm<FormData>();
 
   const navigate = useNavigate();
