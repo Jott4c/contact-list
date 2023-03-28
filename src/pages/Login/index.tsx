@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import api from "../../services/api";
 import { Button, Input, LoginContainer, LoginForm } from "./styles";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Dispatch, SetStateAction } from "react";
 
 interface FormData {
@@ -15,7 +15,6 @@ interface Props {
 
 const Login: React.FC<Props> = ({ setIsAuthenticated }) => {
   const token = localStorage.getItem("authToken");
-  console.log(token);
   const { register, handleSubmit } = useForm<FormData>();
 
   const navigate = useNavigate();
@@ -40,6 +39,10 @@ const Login: React.FC<Props> = ({ setIsAuthenticated }) => {
         <Input type="password" placeholder="senha" {...register("password")} />
 
         <Button type="submit">Login</Button>
+
+        <Link to="/register">
+          <p>Não tem conta?</p>
+        </Link>
       </LoginForm>
     </LoginContainer>
   );
